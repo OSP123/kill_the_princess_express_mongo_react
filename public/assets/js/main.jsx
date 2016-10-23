@@ -1,0 +1,1 @@
+console.log("Fuck little pussies that think they're hot shit");
