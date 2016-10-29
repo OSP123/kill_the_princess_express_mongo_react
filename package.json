@@ -19,7 +19,6 @@
     "gulp-nodemon": "^2.2.1",
     "method-override": "^2.3.5",
     "morgan": "~1.6.1",
-    "mysql": "^2.11.1",
     "react": "^15.3.2",
     "serve-favicon": "~2.3.0"
   },

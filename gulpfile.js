@@ -17,6 +17,7 @@ gulp.task('browser-sync', ['nodemon'], function() {
         port: 7000,
     });
 });
+
 gulp.task('nodemon', function (cb) {
     
     var started = false;

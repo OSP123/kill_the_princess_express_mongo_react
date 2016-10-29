@@ -12,6 +12,9 @@ var http = require('http');
 // we bring in the app we exported from server.js
 var app = require('../server');
 
+// we connect to the database using db.js
+var models = require("../db");
+
 // we set the port of the app
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
