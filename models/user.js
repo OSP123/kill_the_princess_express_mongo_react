@@ -5,7 +5,10 @@ var user = module.exports = {
   name: "User",
   schema: new Schema({
     username: {type: String, required: true, unique: true},
-    password_hash: {type: String, required: true}
+    password_hash: {type: String, required: true},
+    email: {type: String, required: true},
+    firstName: {type: String},
+    lastName: {type: String}
   })
 };
 
