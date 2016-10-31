@@ -5,15 +5,13 @@ var path      = require("path");
 var mongoose  = require("mongoose");
 var env       = process.env.NODE_ENV || "development";
 var config    = require(path.join(__dirname, '..', 'config', 'config.json'))[env];
-var mongoUrl; 
+var mongoUrl  = config.mongo_url;
 
 if(process.env.MONGODB_URI != undefined) {
   mongoUrl = process.env.MONGODB_URI;
-} else {
-  mongoUrl = config.mongo_url;
 }
 
-mongoose.connect(config.mongo_url);
+mongoose.connect(mongoUrl);
 
 var db = {};
 
