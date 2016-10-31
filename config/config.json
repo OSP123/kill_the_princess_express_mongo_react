@@ -1,5 +1,8 @@
 {
   "development": {
     "mongo_url": "mongodb://localhost/monster"
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL"
   }
 }
