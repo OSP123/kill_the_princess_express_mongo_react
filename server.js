@@ -27,6 +27,7 @@ app.use(session(
     saveUninitialized: true
 	}
 ));
+
 app.use(cookieParser());
 
 // view engine setup
@@ -47,6 +48,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 require('./routes')(app);
 
 // catch 404 and forward to error handler
@@ -65,6 +67,7 @@ app.use(function(err, req, res, next) {
     error: (app.get('env') === 'development') ? err : {}
   })
 });
+
 
 
 // our module get's exported as app.
